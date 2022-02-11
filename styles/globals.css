@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
 html,
 body {
   padding: 0;
@@ -13,4 +17,97 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+.logo {
+  background: linear-gradient(269.39deg, #6d12c8 11.35%, #b76fff 89.49%);
+  border-radius: 100px;
+  color: white;
+  /* width: 109px;
+  height: 40px; */
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+}
+.pricing .plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+}
+.pricing .plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.pricing .plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.pricing .plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
+.pricing .plan ul.features li {
+  margin: 8px;
+}
+.pricing .plan ul.features li .fas {
+  margin-right: 4px;
+}
+.pricing .plan ul.features li .fa-check-circle {
+  color: #6ab04c;
+}
+.pricing .plan ul.features li .fa-times-circle {
+  color: #eb4d4b;
+}
+/* .pricing .plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #6ab04c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+.pricing .plan.popular {
+  border: 0px solid #9c51e8;
+  position: relative;
+  transform: scale(1);
+}
+.pricing .plan.popular span.span1 {
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c52e49;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+.pricing .plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+.bg-suara {
+  position: absolute;
+  opacity: 0.6;
+  top: 20px;
+  left: 50px;
+  z-index: -1;
+}
+
+.bg-wave {
+  position: absolute;
+  opacity: 0.5;
+  height: 50%;
+  width: 60%;
+  bottom: 0px;
+  right: 0;
+  z-index: 0;
 }
