@@ -2,7 +2,7 @@ import { BadgeCheckIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/solid";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function Main() {
   return (
