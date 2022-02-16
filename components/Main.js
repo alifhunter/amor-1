@@ -1,6 +1,8 @@
 import { BadgeCheckIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/solid";
 import { CheckCircleIcon } from "@heroicons/react/solid";
+import Image from "next/image";
+import Link from "next/Link";
 
 export default function Main() {
   return (
@@ -38,28 +40,37 @@ export default function Main() {
           </p>
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2 hidden md:block">
-          <img
+          <Image
             className="w-full h-full max-w-xl lg:mt-8 mx-auto"
             src="/hero.png"
             alt="web hosting"
-            srcSet=""
+            width={650}
+            height={500}
           />
         </div>
       </section>
       <section className="container px-4 py-12 mx-auto lg:h-auto lg:space-x-8 lg:flex lg:items-start">
         <div className="w-full m:w-1/3 bg-white-100">
-          <div class="flex items-start mb-8">
-            <div class="w-1/5">
-              <img className="w-20" src="/hardware.png" alt="" srcSet="" />
+          <div className="flex items-start mb-8">
+            <div className="w-1/5">
+              {/* <img className="w-20" src="/hardware.png" alt="" srcSet="" /> */}
+              <Image
+                className="w-20"
+                height={80}
+                width={80}
+                src="/hardware.png"
+                alt=""
+                srcSet=""
+              />
             </div>
             <div className="w-4/5 px-4">
               <div>
-                <span class="font-semibold text-lg text-gray-800">
+                <span className="font-semibold text-lg text-gray-800">
                   Hardware Handal
                 </span>
               </div>
               <div>
-                <span class="text-gray-400 font-light">
+                <span className="text-gray-400 font-light">
                   Performa server diatas rata- rata dibandingkan spesifikasi
                   server serupa.
                 </span>
@@ -68,18 +79,26 @@ export default function Main() {
           </div>
         </div>
         <div className="w-full m:w-1/3 bg-white-100">
-          <div class="flex items-start mb-8">
-            <div class="w-1/5">
-              <img className="w-20" src="/datacenter.png" alt="" srcSet="" />
+          <div className="flex items-start mb-8">
+            <div className="w-1/5">
+              {/* <img className="w-20" src="/datacenter.png" alt="" srcSet="" /> */}
+              <Image
+                className="w-20"
+                height={80}
+                width={80}
+                src="/datacenter.png"
+                alt=""
+                srcSet=""
+              />
             </div>
             <div className="w-4/5 px-4">
               <div>
-                <span class="font-semibold text-lg text-gray-800 mt-4">
+                <span className="font-semibold text-lg text-gray-800 mt-4">
                   Datacenter Pilihan
                 </span>
               </div>
               <div>
-                <span class="text-gray-400 font-light">
+                <span className="text-gray-400 font-light">
                   Server dan data terjamin secara fisik di datacenter pilihan
                   dengan performa terbaik. Serta jaminan uptime 99%.
                 </span>
@@ -88,18 +107,26 @@ export default function Main() {
           </div>
         </div>
         <div className="w-full m:w-1/3 bg-white-100">
-          <div class="flex items-start mb-8">
+          <div className="flex items-start mb-8">
             <div className="w-1/5">
-              <img className="w-20" src="/support.png" alt="" srcSet="" />
+              {/* <img className="w-20" src="/support.png" alt="" srcSet="" /> */}
+              <Image
+                className="w-20"
+                src="/support.png"
+                alt=""
+                srcSet=""
+                height={80}
+                width={80}
+              />
             </div>
             <div className="w-4/5 px-4">
               <div>
-                <span class="font-semibold text-lg text-gray-800">
+                <span className="font-semibold text-lg text-gray-800">
                   Support Terbaik
                 </span>
               </div>
               <div>
-                <span class="text-gray-400 font-light">
+                <span className="text-gray-400 font-light">
                   Memiliki pengalaman tentang Web Hosting dan Server sejak tahun
                   2013.
                 </span>
@@ -164,7 +191,7 @@ export default function Main() {
                   Bisnis
                 </h1>
                 <p className="text-sm">Cocok untuk website bisnis kecil</p>
-                <p class="text-black dark:text-white text-2xl font-bold mt-2">
+                <p className="text-black dark:text-white text-2xl font-bold mt-2">
                   <span className="text-sm">Rp</span>56.250
                   <span className="text-sm text-gray-500 font-light">
                     /bulan
@@ -178,7 +205,7 @@ export default function Main() {
                     Pilih Paket
                   </a>
                 </button>
-                <span class="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
+                <span classclassName="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
                 <div>
                   <p className="text-sm text-left mb-3">
                     <CheckCircleIcon
@@ -257,7 +284,7 @@ export default function Main() {
                   Standar
                 </h1>
                 <p className="text-sm">Paket sempurna untuk website pribadi!</p>
-                <p class="text-black dark:text-white text-2xl font-bold mt-2">
+                <p className="text-black dark:text-white text-2xl font-bold mt-2">
                   <span className="text-sm">Rp</span>25.000
                   <span className="text-sm text-gray-500 font-light">
                     /bulan
@@ -271,7 +298,7 @@ export default function Main() {
                     Pilih Paket
                   </a>
                 </button>
-                <span class="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
+                <span className="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
                 <div>
                   <p className="text-sm text-left mb-3">
                     <CheckCircleIcon
@@ -335,7 +362,7 @@ export default function Main() {
                   Pemula
                 </h1>
                 <p className="text-sm">Solusi ideal bagi pemula</p>
-                <p class="text-black dark:text-white text-2xl font-bold mt-2">
+                <p className="text-black dark:text-white text-2xl font-bold mt-2">
                   <span className="text-sm">Rp</span>15.000
                   <span className="text-sm text-gray-500 font-light">
                     /bulan
@@ -349,7 +376,7 @@ export default function Main() {
                     Pilih Paket
                   </a>
                 </button>
-                <span class="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
+                <span className="w-full block bg-slate-200 h-1 rounded-lg my-6"></span>
                 <div>
                   <p className="text-sm text-left mb-3">
                     <CheckCircleIcon
@@ -428,19 +455,19 @@ export default function Main() {
           </h1>
           <div className="my-8">
             <div className="bg-bgPurple2 dark:bg-gray-800 w-full shadow mx-auto rounded p-4 px-8">
-              <p class="text-gray-900 dark:text-white">
-                <span class="font-bold text-darkPurple2 text-3xl">“</span>
+              <p className="text-gray-900 dark:text-white">
+                <span className="font-bold text-darkPurple2 text-3xl">“</span>
                 Amorhost murah meriah tapi tidak pernah ada masalah, support
                 ramah dan selalu siap membantu jika saya ada kesulitan. Thanks
                 Amorhost, semoga makin jaya dan dijaga pelayanannya yang sudah
                 bagus ini!
               </p>
-              <div class="flex items-center mt-4">
-                <div class="flex flex-col justify-between">
-                  <span class="font-semibold text-darkPurple2 text-sm">
+              <div className="flex items-center mt-4">
+                <div className="flex flex-col justify-between">
+                  <span className="font-semibold text-darkPurple2 text-sm">
                     Bames Jond
                   </span>
-                  <span class="dark:text-gray-400 text-xs mt-1 flex items-center">
+                  <span className="dark:text-gray-400 text-xs mt-1 flex items-center">
                     Aktor
                   </span>
                 </div>
@@ -471,9 +498,9 @@ export default function Main() {
             </div>
             <div className="self-center justify-self-end">
               <button className="bg-white text-darkPurple px-8 rounded py-3 sm:flex sm:justify-center lg:justify-start shadow">
-                <a href="http://" className="font-semibold">
-                  Pesan Sekarang
-                </a>
+                <Link href="http://" className="font-semibold">
+                  <a>Pesan Sekarang</a>
+                </Link>
               </button>
             </div>
           </div>

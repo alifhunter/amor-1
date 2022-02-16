@@ -8,6 +8,9 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Amorhost</title>
+      </Head>
       <div
         id="app"
         className="flex flex-col font-body dark:bg-gray-900 overflow-hidden"
