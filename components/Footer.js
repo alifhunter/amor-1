@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="">
           <h1 className="font-semibold text-xl">Layanan</h1>
           <ul>
-            <li class="mt-5 mb-2">
+            <li className="mt-5 mb-2">
               <a
                 href="#"
                 target="_blank"
@@ -15,7 +15,7 @@ export default function Footer() {
                 Web hosting unlimited
               </a>
             </li>
-            <li class="mt-2 mb-2">
+            <li className="mt-2 mb-2">
               <a
                 href="#"
                 target="_blank"
@@ -25,7 +25,7 @@ export default function Footer() {
                 Dedicated hosting VPS
               </a>
             </li>
-            <li class="mt-2 mb-2">
+            <li className="mt-2 mb-2">
               <a
                 href="#"
                 target="_blank"
@@ -40,7 +40,7 @@ export default function Footer() {
         <div>
           <h1 className="font-semibold text-xl">Kontak</h1>
           <ul>
-            <li class="mt-5 mb-2">
+            <li className="mt-5 mb-2">
               <a
                 href="#"
                 target="_blank"
@@ -50,7 +50,7 @@ export default function Footer() {
                 Telp: +628123456789
               </a>
             </li>
-            <li class="mt-2 mb-2">
+            <li className="mt-2 mb-2">
               <a
                 href="#"
                 target="_blank"
