@@ -70,7 +70,7 @@ export default function Footer() {
           </p>
         </div>
       </section>
-      <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
+      <hr className="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
       <section className="px-4 py-4 md:flex md:items-center md:justify-between">
         <p className="text-xs text-gray-800">
           Copyright (c) 2022, Amorhost. All Rights Reserved.
