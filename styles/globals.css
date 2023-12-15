@@ -20,6 +20,10 @@ a {
   box-sizing: border-box;
 } */
 
+HTML, body {
+  background-color: white;
+}
+
 .logo {
   background: linear-gradient(269.39deg, #6d12c8 11.35%, #b76fff 89.49%);
   border-radius: 100px;
